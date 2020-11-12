@@ -1,0 +1,475 @@
+{
+    "meta": {
+        "num_tuples": 48842,
+        "num_attributes": 18,
+        "num_attributes_in_BN": 14,
+        "all_attributes": [
+            "index",
+            "lastname",
+            "firstname",
+            "age",
+            "workclass",
+            "fblwgt",
+            "education",
+            "education_num",
+            "martial-status",
+            "occupation",
+            "relationship",
+            "race",
+            "sex",
+            "captial-gains",
+            "capial-loss",
+            "hours-per-week",
+            "native-country",
+            "income"
+        ],
+        "candidate_keys": [
+            "index"
+        ],
+        "non_categorical_string_attributes": [
+            "firstname",
+            "lastname",
+            "native-country"
+        ],
+        "attributes_in_BN": [
+            "sex",
+            "workclass",
+            "captial-gains",
+            "relationship",
+            "occupation",
+            "education",
+            "martial-status",
+            "fblwgt",
+            "income",
+            "hours-per-week",
+            "age",
+            "education_num",
+            "capial-loss",
+            "race"
+        ]
+    },
+    "attribute_description": {
+        "index": {
+            "name": "index",
+            "data_type": "Integer",
+            "is_categorical": false,
+            "is_candidate_key": true,
+            "min": 0,
+            "max": 48841,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                0.0,
+                48841.0
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        },
+        "lastname": {
+            "name": "lastname",
+            "data_type": "String",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 2,
+            "max": 15,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                2,
+                15
+            ],
+            "distribution_probabilities": [
+                0,
+                0
+            ]
+        },
+        "firstname": {
+            "name": "firstname",
+            "data_type": "String",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 2,
+            "max": 11,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                2,
+                11
+            ],
+            "distribution_probabilities": [
+                0,
+                0
+            ]
+        },
+        "age": {
+            "name": "age",
+            "data_type": "Integer",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 17,
+            "max": 90,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                17.0,
+                90.0
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        },
+        "workclass": {
+            "name": "workclass",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 7,
+            "max": 16,
+            "missing_rate": 0.05730723557593874,
+            "distribution_bins": [
+                "State-gov",
+                "Self-emp-not-inc",
+                "Private",
+                "Federal-gov",
+                "Local-gov",
+                "Self-emp-inc",
+                "Without-pay",
+                "Never-worked"
+            ],
+            "distribution_probabilities": [
+                0.125,
+                0.125,
+                0.125,
+                0.125,
+                0.125,
+                0.125,
+                0.125,
+                0.125
+            ]
+        },
+        "fblwgt": {
+            "name": "fblwgt",
+            "data_type": "Integer",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 12285,
+            "max": 1490400,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                12285.0,
+                1490400.0
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        },
+        "education": {
+            "name": "education",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 3,
+            "max": 12,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                "Bachelors",
+                "HS-grad",
+                "11th",
+                "Masters",
+                "9th",
+                "Some-college",
+                "Assoc-acdm",
+                "Assoc-voc",
+                "7th-8th",
+                "Doctorate",
+                "Prof-school",
+                "5th-6th",
+                "10th",
+                "1st-4th",
+                "Preschool",
+                "12th"
+            ],
+            "distribution_probabilities": [
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625,
+                0.0625
+            ]
+        },
+        "education_num": {
+            "name": "education_num",
+            "data_type": "Integer",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 1,
+            "max": 16,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                13,
+                9,
+                7,
+                14,
+                5,
+                10,
+                12,
+                11,
+                4,
+                16,
+                15,
+                3,
+                6,
+                2,
+                1,
+                8
+            ],
+            "distribution_probabilities": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "martial-status": {
+            "name": "martial-status",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 7,
+            "max": 21,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                "Never-married",
+                "Married-civ-spouse",
+                "Divorced",
+                "Married-spouse-absent",
+                "Separated",
+                "Married-AF-spouse",
+                "Widowed"
+            ],
+            "distribution_probabilities": [
+                0.14285714285714285,
+                0.14285714285714285,
+                0.14285714285714285,
+                0.14285714285714285,
+                0.14285714285714285,
+                0.14285714285714285,
+                0.14285714285714285
+            ]
+        },
+        "occupation": {
+            "name": "occupation",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 5,
+            "max": 17,
+            "missing_rate": 0.05751197739650301,
+            "distribution_bins": [
+                "Adm-clerical",
+                "Exec-managerial",
+                "Handlers-cleaners",
+                "Prof-specialty",
+                "Other-service",
+                "Sales",
+                "Craft-repair",
+                "Transport-moving",
+                "Farming-fishing",
+                "Machine-op-inspct",
+                "Tech-support",
+                "Protective-serv",
+                "Armed-Forces",
+                "Priv-house-serv"
+            ],
+            "distribution_probabilities": [
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142,
+                0.07142857142857142
+            ]
+        },
+        "relationship": {
+            "name": "relationship",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 4,
+            "max": 14,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                "Not-in-family",
+                "Husband",
+                "Wife",
+                "Own-child",
+                "Unmarried",
+                "Other-relative"
+            ],
+            "distribution_probabilities": [
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666,
+                0.16666666666666666
+            ]
+        },
+        "race": {
+            "name": "race",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 5,
+            "max": 18,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                "White",
+                "Black",
+                "Asian-Pac-Islander",
+                "Amer-Indian-Eskimo",
+                "Other"
+            ],
+            "distribution_probabilities": [
+                0.2,
+                0.2,
+                0.2,
+                0.2,
+                0.2
+            ]
+        },
+        "sex": {
+            "name": "sex",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 4,
+            "max": 6,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                "Male",
+                "Female"
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        },
+        "captial-gains": {
+            "name": "captial-gains",
+            "data_type": "Integer",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 0,
+            "max": 99999,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                0.0,
+                99999.0
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        },
+        "capial-loss": {
+            "name": "capial-loss",
+            "data_type": "Integer",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 0,
+            "max": 4356,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                0.0,
+                4356.0
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        },
+        "hours-per-week": {
+            "name": "hours-per-week",
+            "data_type": "Integer",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 1,
+            "max": 98,
+            "missing_rate": 0.0028049629417304777,
+            "distribution_bins": [
+                1.0,
+                98.0
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        },
+        "native-country": {
+            "name": "native-country",
+            "data_type": "String",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 4,
+            "max": 26,
+            "missing_rate": 0.017546374022357807,
+            "distribution_bins": [
+                4,
+                26
+            ],
+            "distribution_probabilities": [
+                0,
+                0
+            ]
+        },
+        "income": {
+            "name": "income",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 4,
+            "max": 5,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                "<=50K",
+                ">50K"
+            ],
+            "distribution_probabilities": [
+                0.5,
+                0.5
+            ]
+        }
+    }
+}
